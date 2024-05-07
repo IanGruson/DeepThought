@@ -206,11 +206,11 @@
   <span class="icon">
     <i class="fas fa-user"></i>
   </span>
-  <span>{{ config.extra.author.name }} published on</span>
+  <span>{{ config.extra.author.name }} a publié le </span>
   <span class="icon">
     <i class="far fa-calendar-alt"></i>
   </span>
-  <span><time datetime="{{ page.date }}">{{ page.date | date(format='%B %d, %Y') }}</time></span>
+  <span><time datetime="{{ page.date }}">{{ page.date | date(format='%d %B %Y', timezone='Europe/Paris', locale='fr_FR') }}</time></span>
 </span>
 {% endmacro %}
 
@@ -223,7 +223,7 @@
   <span class="icon">
     <i class="fas fa-pencil-alt"></i>
   </span>
-  <span>{{ page.word_count }} words</span>
+  <span>{{ page.word_count }} mots</span>
 </span>
 {% endmacro %}
 
