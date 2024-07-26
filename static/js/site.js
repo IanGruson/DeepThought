@@ -117,7 +117,7 @@ function formatSearchResultItem(item, terms) {
     `<div class='content mt-2'>` +
     `${makeTeaser(item.doc.body, terms)}` +
     `<a href='${item.ref}'>` +
-    `Read More <span class="icon is-small"><i class="fas fa-arrow-right fa-xs"></i></span>` +
+    `Lire plus <span class="icon is-small"><i class="fas fa-arrow-right fa-xs"></i></span>` +
     `</a>` +
     `</div>` +
     `</article>`
